@@ -1,9 +1,12 @@
 # clustering algorithms and metrics
 scikit-learn==0.21.3
+
 # kmedoids
 scikit-learn-extra @ https://github.com/scikit-learn-contrib/scikit-learn-extra/archive/master.zip
+
 # meta-features
 pymfe==0.0.3
+
 # Random search (RS)
 scikit-optimize==0.5.2
 
