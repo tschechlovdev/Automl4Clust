@@ -9,7 +9,7 @@ Furthermore, other clustering algorithms, e.g., from other clustering families, 
 
 ### Prerequisites
 
-To install the AutoML4Clust API, you require Python 3.6 and a Linux environment with Ubuntu >= 16.04.
+To use the AutoML4Clust API, you require Python 3.6 and a Linux environment with Ubuntu >= 16.04.
 You can find and install the required libraries from the `requirements.txt` file.
  
 ### Optimizers
