@@ -7,7 +7,7 @@ from Optimizer.Optimizer import SMACOptimizer, RandomOptimizer, BOHBOptimizer, H
 import ConfigSpace.hyperparameters as CSH
 
 # Create a testing data set for all examples
-X, y = make_blobs(n_samples=1000, n_features=10)
+X, y = make_blobs(n_samples=10000, n_features=10)
 
 # optimizers that can be used in our implementation
 optimizers = [RandomOptimizer, SMACOptimizer, HyperBandOptimizer, BOHBOptimizer]

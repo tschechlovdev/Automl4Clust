@@ -168,10 +168,12 @@ class AbstractOptimizer(ABC):
         # Only have 1 parameter so take first parameter of search space list
         # search_space = self.search_space[0]
 
+        upper = len(self.dataset)/10
+        lower = 2
         algorithm_hyperparameter = CSH.CategoricalHyperparameter("algorithm", choices=ClusteringAlgorithms.algorithms)
         cs.add_hyperparameter(algorithm_hyperparameter)
-        k_hyperparameter = CSH.UniformIntegerHyperparameter("k", lower=2,
-                                                            upper=200)
+        k_hyperparameter = CSH.UniformIntegerHyperparameter("k", lower=lower,
+                                                            upper=upper)
         cs.add_hyperparameter(k_hyperparameter)
         self.cs = cs
         return self.cs
